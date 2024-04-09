@@ -82,7 +82,7 @@ def stage2_identify_categories(domain, usecase, stage1response, system_message="
     
     3. Come up with consistent rules/logic for how you will subdivide into classes all the things you've identified in this domain. The logic of your subdividing approach should make sense for the nature of this particular domain.
     
-    4. Following the logic/rules you've decided on, subdivide all the "things" in the domain into subclasses. Then repeat, dividing further into subclasses of that. And then subclasses of that. And so on, until you have reached the bottom of the taxonomy.
+    4. Following the logic/rules you've decided on, subdivide all the "things" in the domain into subclasses. Then repeat, dividing further into subclasses of that. And then subclasses of that. And so on, until you have reached the bottom of the taxonomy. Critically analyze the categories and subcategories you've identified. Make revisions to enhance clarity, coverage, and practical utility.
     
     5. Output your thinking for each of these steps.
     
@@ -116,7 +116,7 @@ def stage3_make_taxonomy(domain, usecase, stage2response, system_message="", use
                 """
     if(user_message==""):
         user_message = f"""  
-    Below you will find the information to generate a taxonomy for {usecase}. Generate a taxonomomy with categories/conceots relevent specifically for {usecase}.
+    Below you will find the information to generate a taxonomy for {usecase}. Generate a taxonomomy with categories/concepts relevent specifically for {usecase}. Ensure the naming of the categories and subcategories are according to the naming conventions of taxonomies.
     
     Give the taxonomy in a JSON format. 
     CONTENT:

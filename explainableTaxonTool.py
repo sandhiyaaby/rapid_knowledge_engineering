@@ -132,7 +132,7 @@ systemmessage2 = f"""You are an expert in {st.session_state.domain} and in gener
 usermessage2= f""" 1. Read the content below, and recollect your general {st.session_state.domain} knowledge and determine the domain and its edges. In other words, figure out what concepts are included in this domain, and what are not. Also, understand the edge-cases to stress-test the borders of the domain that you establish, to confirm or adjust them.
 2. Identify all the possible "things" in this domain. What are ALL the possible, mutually-exclusive concepts that exist within the domain you've defined, and how can they be termed in a way that they are distinguishable, understandable and mutually-exclusive from a semantic perspective.
 3. Come up with consistent rules/logic for how you will subdivide into classes all the things you've identified in this domain. The logic of your subdividing approach should make sense for the nature of this particular domain.
-4. Following the logic/rules you've decided on, subdivide all the "things" in the domain into subclasses. Then repeat, dividing further into subclasses of that. And then subclasses of that. And so on, until you have reached the bottom of the taxonomy.
+4. Following the logic/rules you've decided on, subdivide all the "things" in the domain into subclasses. Then repeat, dividing further into subclasses of that. And then subclasses of that. And so on, until you have reached the bottom of the taxonomy. Critically analyze the categories and subcategories you've identified. Make revisions to enhance clarity, coverage, and practical utility.
 5. Output your thinking for each of these steps.
 
 CONTENT:
@@ -155,7 +155,7 @@ systemmessage3=f"""You are an expert in {st.session_state.domain} and in generat
 
 usermessage3= f""" 
 Below you will find the information to generate a taxonomy for {st.session_state.use_case}. 
-Generate a taxonomomy with categories/conceots relevent specifically for {st.session_state.use_case}.
+Generate a taxonomomy with categories/conceots relevent specifically for {st.session_state.use_case}. Ensure the naming of the categories and subcategories are according to the naming conventions of taxonomies.
 Give the taxonomy in a JSON format. 
 CONTENT:
 {st.session_state.response2}
