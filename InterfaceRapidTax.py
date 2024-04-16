@@ -28,7 +28,6 @@ if "domain" not in st.session_state:
     st.session_state.domain=""
 
 
-st.title("Brainstorm Taxonomies with AI")
 
 st.markdown(
     """
@@ -37,7 +36,7 @@ st.markdown(
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
+            background-color: #E7717D;
         }
 
         .container {
@@ -82,6 +81,8 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+
+st.title("Brainstorm Taxonomies with AI")
 
 prog_bar=""
 
