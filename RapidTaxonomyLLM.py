@@ -9,24 +9,24 @@ from openai import OpenAI
 from Utilities import json_to_bullet_points, extract_json_from_text
 
 
-api_base = "https://derai-vision.openai.azure.com/"
-api_key = os.environ["OPENAI_AZURE_API_KEY"]
-model_v = "derai-gpt4-vision"
-model_t = "derai-gpt4-text-0613"
+# api_base = "https://derai-vision.openai.azure.com/"
+# api_key = os.environ["OPENAI_AZURE_API_KEY"]
+# model_v = "derai-gpt4-vision"
+# model_t = "derai-gpt4-text-0613"
 
 client = OpenAI(api_key=os.environ["OPENAI_API_KEY"])
 
-client_v = AzureOpenAI(
-    api_key=api_key,
-    api_version='2023-12-01-preview',
-    base_url=f"{api_base}openai/deployments/{model_v}/extensions",
-)
-
-client_t = AzureOpenAI(
-    api_key=api_key,
-    api_version='2023-10-01-preview',
-    azure_endpoint=f"{api_base}"
-)
+# client_v = AzureOpenAI(
+#     api_key=api_key,
+#     api_version='2023-12-01-preview',
+#     base_url=f"{api_base}openai/deployments/{model_v}/extensions",
+# )
+#
+# client_t = AzureOpenAI(
+#     api_key=api_key,
+#     api_version='2023-10-01-preview',
+#     azure_endpoint=f"{api_base}"
+# )
 
 
 
