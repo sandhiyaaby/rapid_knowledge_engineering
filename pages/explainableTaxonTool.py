@@ -1,8 +1,10 @@
 import os
+import sys
 
 import streamlit as st
 from openai import OpenAI
 from io import StringIO
+sys.path.insert(1, os.getcwd())
 from RapidTaxonomyLLM import stage2_identify_categories, stage1_knowledge_summary, stage3_make_taxonomy, stage4_convert_JSON
 
 
